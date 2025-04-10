@@ -1,0 +1,68 @@
+<div class="container">
+  <h2>Gestion des Offres Partenaires</h2>
+
+  <!-- 🟢 Formulaire d'ajout d'une nouvelle offre -->
+  <form (ngSubmit)="addOffre()" class="mb-4">
+    <div class="form-group">
+      <input type="text" [(ngModel)]="newOffre.nom" name="nom" placeholder="Nom de l'offre" required class="form-control">
+    </div>
+    <div class="form-group">
+      <input type="text" [(ngModel)]="newOffre.typeOffre" name="typeOffre" placeholder="Type d'offre" required class="form-control">
+    </div>
+    <div class="form-group">
+      <input type="number" [(ngModel)]="newOffre.prix" name="prix" placeholder="Prix" required class="form-control">
+    </div>
+    <div class="form-group">
+      <input type="text" [(ngModel)]="newOffre.localisation" name="localisation" placeholder="Localisation" required class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Ajouter l'Offre</button>
+  </form>
+
+  <!-- 🟡 Formulaire de modification d'une offre -->
+  <div *ngIf="editMode">
+    <h3>Modifier l'Offre</h3>
+    <form (ngSubmit)="updateOffre()" class="mb-4">
+      <div class="form-group">
+        <input type="text" [(ngModel)]="selectedOffre.nom" name="nom" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <input type="text" [(ngModel)]="selectedOffre.typeOffre" name="typeOffre" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <input type="number" [(ngModel)]="selectedOffre.prix" name="prix" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <input type="text" [(ngModel)]="selectedOffre.localisation" name="localisation" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-success">Mettre à jour</button>
+      <button type="button" (click)="cancelEdit()" class="btn btn-secondary">Annuler</button>
+    </form>
+  </div>
+
+  <!-- 🔵 Tableau des offres -->
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nom</th>
+        <th>Type</th>
+        <th>Prix</th>
+        <th>Localisation</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let offre of offres">
+        <td>{{ offre.id }}</td>
+        <td>{{ offre.nom }}</td>
+        <td>{{ offre.typeOffre }}</td>
+        <td>{{ offre.prix }}€</td>
+        <td>{{ offre.localisation }}</td>
+        <td>
+          <button (click)="editOffre(offre)" class="btn btn-warning">Modifier</button>
+          <button (click)="deleteOffre(offre.id)" class="btn btn-danger">Supprimer</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

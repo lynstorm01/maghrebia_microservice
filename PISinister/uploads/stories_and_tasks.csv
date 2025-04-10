@@ -1,0 +1,31 @@
+Summary,Issue Type,Description,Priority,Epic Link
+US-101: Declare an incident,Story,As a user I want to declare an incident (accident theft fire etc.) so that I can report it quickly.,High,SCRUM-1
+Task 1: Design and develop the incident declaration form,Task,Design and develop the incident declaration form.,High,SCRUM-1
+Task 2: Implement form validation and error handling,Task,Implement form validation and error handling.,High,SCRUM-1
+Task 3: Store incident data securely in the database,Task,Store incident data securely in the database.,High,SCRUM-1
+US-102: Upload supporting documents,Story,"As a user I want to upload supporting documents (photos, reports,etc) to provide evidence for my claim.",High,SCRUM-1
+Task 1: Develop file upload functionality,Task,Develop file upload functionality.,High,SCRUM-1
+Task 2: Integrate storage and retrieval system,Task,Integrate storage and retrieval system.,High,SCRUM-1
+Task 3: Implement OCR for automatic document processing,Task,Implement OCR for automatic document processing.,High,SCRUM-1
+US-201: Track claim status in real time,Story,As a user I want to track the status of my claim in real time to stay updated.,High,SCRUM-2
+Task 1: Develop a status tracking system,Task,Develop a status tracking system.,High,SCRUM-2
+Task 2: Integrate real-time status updates,Task,Integrate real-time status updates.,High,SCRUM-2
+US-202: Admin dashboard for claim management,Story,As an admin I want an internal dashboard to manage and update claims efficiently.,High,SCRUM-2
+Task 1: Create a claim processing interface,Task,Create a claim processing interface.,High,SCRUM-2
+Task 2: Implement filters for different claim statuses,Task,Implement filters for different claim statuses.,High,SCRUM-2
+US-301: Communicate with an insurance expert,Story,As a user I want to communicate with an insurance expert to discuss my claim.,Medium,SCRUM-3
+Task 1: Implement a messaging system,Task,Implement a messaging system.,Medium,SCRUM-3
+Task 2: Enable real-time chat support,Task,Enable real-time chat support.,Medium,SCRUM-3
+Task 3: Add video call support for expert discussions,Task,Add video call support for expert discussions.,Medium,SCRUM-3
+US-302: Review claims with documents,Story,As an insurance expert I want to review claims with all necessary documents easily.,Medium,SCRUM-3
+Task 1: Display uploaded documents in an organized way,Task,Display uploaded documents in an organized way.,Medium,SCRUM-3
+Task 2: Implement annotation features for documents,Task,Implement annotation features for documents.,Medium,SCRUM-3
+US-401: AI-powered damage assessment,Story,As a user I want AI-powered damage assessment to estimate repair costs quickly.,High,SCRUM-4
+Task 1: Integrate AI damage assessment tool,Task,Integrate AI damage assessment tool.,High,SCRUM-4
+Task 2: Train AI with historical claims data,Task,Train AI with historical claims data.,High,SCRUM-4
+US-402: Automated notifications,Story,As a user I want automated notifications to keep me informed about my claim progress.,Medium,SCRUM-4
+Task 1: Implement push/email notifications for status changes,Task,Implement push/email notifications for status changes.,Medium,SCRUM-4
+Task 2: Add SMS alerts for urgent updates,Task,Add SMS alerts for urgent updates.,Medium,SCRUM-4
+US-403: Share location during incident reporting,Story,As a user I want to share my location when reporting an incident to provide accurate details.,High,SCRUM-4
+Task 1: Integrate GPS location tracking during claim declaration,Task,Integrate GPS location tracking during claim declaration.,High,SCRUM-4
+Task 2: Ensure GDPR compliance for location data,Task,Ensure GDPR compliance for location data.,High,SCRUM-4

@@ -1,0 +1,5 @@
+Summary,Issue Type,Description,Priority
+Incident Declaration & Documentation,Epic,Allow users to declare incidents and upload documents.,High
+Incident Processing & Tracking,Epic,Track the status and progress of incidents.,High
+Insurance Expert Communication,Epic,Enable communication between users and experts.,Medium
+AI & Advanced Features Integration,Epic,Integrate AI, OCR, and location tracking.,High
